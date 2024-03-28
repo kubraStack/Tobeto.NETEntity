@@ -1,0 +1,11 @@
+﻿Using Kullanımı:
+* IDisposable Arayüzü ile Kaynak Yönetimi: using ifadesi, IDisposable arayüzü uygulanan nesnelerin kullanımını kolaylaştırmak için tasarlanmıştır. IDisposable arayüzü,
+nesnenin bellekten atılması gerektiğinde kaynakları serbest bırakmak için Dispose() yöntemini sağlar.
+
+* Kapsam (Scope) Tanımlama: using ifadesi aynı zamanda belirli bir kapsam içinde bir nesneyi tanımlamanın ve kullanmanın kısa bir yoludur. using bloğu içinde tanımlanan nesne, using bloğu dışına çıkıldığında otomatik olarak kapatılır ve bellekten serbest bırakılır.
+
+
+Db First => Db'in tasarlanması ve sonra ORM kodlarının yazılması.
+Code first => ORM kodlarının yazılması ve bazı toollar ile db'in otomatik generic edilmesi
+
+Migration => Database'i her yenilediğimizde bir history oluşturur.

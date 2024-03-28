@@ -1,0 +1,65 @@
+﻿
+        //Bir methodu belirli bir endpointe bağlamak için gereken isteği methodun üstüne yazarız.
+
+        //[HttpGet]
+
+        //public string Hello([FromQuery] string name, [FromQuery] string surname)
+        //{
+        //    var language = Request.Headers.AcceptLanguage;
+        //    if (language == "en")
+        //    {
+        //        return "Hello " + name + " " + surname;
+        //    }
+        //    return "Merhaba";
+
+        //    //Route Parameters, Query String => Get isteklerinde popüler
+        //    //Body =>POST, PUT
+        //    //Header => Yan bilgileri içerir ()
+        //}
+
+        //[HttpGet("{username}")]
+
+        //public string Tobeto([FromRoute] string username)
+        //{
+        //    return "Tobeto kullanıcı Adınız: " + username;
+        //}
+
+
+        //[HttpPost]
+        //    Body =>POST, PUT
+        //C#'dan Json'a  otomatik çevirir C# yapar.
+        //public Product GoodBye([FromBody] Product product)
+        //{
+        //    return product;
+        //}
+
+        //Post isteğini tarayıcı üzerinden atamayacağımız için postman veya swagger kullanılabilir.
+
+        /* Controller Metotları
+         * [HttpGet] => Berlirli bir kaynağın(örneğin bir liste veya detay)alınması için kullanılır.'HttpGet' özniteliği ile işaretlenen metotlar, HTTP GET isteklerine yanıt verir.
+         * [HttpPost] => Bir kaynağın oluşturulması için kullanılır.Bu öznitelik ile işaretlenen metotlar HTTP POST isteklerine yanıt verir.
+         * [HttpPut] => Bir kaynağın tamamen güncellenmesi için kullanılır.Bu öznitelik ile işaretlenen metodlar HTTP PUT isteklerine yanıt verir.
+         * [HttpDelete] => Bir kaynağın silinmesi için kullanılır.Bu öznitelik ile işaretlenen metotlar HTTP DELETE isteklerine yanıt verir.
+         
+         Bu Controller metodları, farklı HTTP isteklerine karşılık gelir ve uygulamanın belirli işlevlerini gerçekleştirir. 
+         Bunlar, bir web API veya MVC uygulamasının temel CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirmek için sıkça kullanılan metot türleridir.
+         */
+
+        //Bir controllerın altında birden fazla get yazmak için yazılan get controllerının içine ActionName yazmamız gerekir.
+
+        /* HTTP isteklerinden gelen sorgu parametrelerini Controller metotlarından almak için şu öznitelikler kullanılır:
+         * [FromQuery] => HTTP isteğiyle gönderilen sorgu parametrelerini almak için kullanılır.
+         * [FromBody] => HTTP isteği gövdesinden gelen verileri almal için kullanılır.JSON veya XML  gibi veri biçimlerini almak için sıklıkla kullanılır.
+         * [FromRoute] => URL rotasından gelen parametreleri almak için kullanılır.Örnğin `/api/usesrs/{id}` gibi bir URL'de `{id}` değerini almak için kullanılır.
+         * [FromHeader] => HTTP isteği başlıklarından gelen verileri almak için kullanılır.Özellikle yetkilendirme bilgileri gibi başlık tabanlı verileri almak için kullanılır.
+         * [FromForm] => HTML formundan gelen verileri almak için kullanılır.Özellikle HTTP POST isteklerinde from verilerini almak için kullanılır.
+         * 
+         * Bu öznitelikler, Controller metotlarına HTTP isteğinden gelen verileri almak için kullanılır ve belirli bir parametre türüne dönüştürür. Bu sayede Controller metotları, gelen verilere kolayca erişebilir ve işleyebilir.
+         
+         
+         */
+
+         DataAccess - Entity Framework
+         Entity Framework => Bir ORM tool'udur. ORM(Object Relation Mapping) => Veri tabanı tablolarını C# objesine çeirmeyi sağlayan ve veritabanı işlemleri yapmamıza olanak sağlayan yapıdır.
+
+         SOLID => S => SINGLE RESPONSIBILITY
