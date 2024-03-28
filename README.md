@@ -1,1 +1,3 @@
 # Tobeto.NETGiris
+
+*EntityFramework Çalışması
